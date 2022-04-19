@@ -31,7 +31,7 @@ class Calculator extends PureComponent {
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="2" value="2" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="3" value="3" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="+" value="plus" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray zero" label="0" size="2" value="0" />
+          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray zero" label="0" value="0" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="." value="." />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="=" value="equal" />
 
