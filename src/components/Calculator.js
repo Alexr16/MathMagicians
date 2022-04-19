@@ -5,12 +5,10 @@ import Display from './Display';
 class Calculator extends PureComponent {
   constructor() {
     super();
-    // this.state = { operations : [] };
     this.state = { };
   }
 
   render() {
-    // const { operations } = this.state;
     return (
       <div className="container">
         <Display data={0} />
