@@ -24,7 +24,6 @@ class Calculator extends Component {
 
   render() {
     const { next, total } = this.state;
-    console.log(this.state);
     return (
       <div className="container">
         <Display data={next || total} />
@@ -36,7 +35,7 @@ class Calculator extends Component {
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="7" value="7" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="8" value="8" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="9" value="9" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="x" value="X" />
+          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="x" value="x" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="4" value="4" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="5" value="5" />
           <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="6" value="6" />
