@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Button from './Button';
 import Display from './Display';
+import calculate from '../logic/calculate';
 
 class Calculator extends PureComponent {
   constructor() {
