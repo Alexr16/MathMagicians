@@ -47,8 +47,16 @@ body {
   background-color: #d4d4d2;
 }
 
+.gray:hover {
+  background-color: gray;
+}
+
 .orange {
   background-color: #ff9001;
+}
+
+.orange:hover {
+  background-color: orange;
 }
 
 .zero {
