@@ -1,56 +1,50 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
 import Display from './Display';
 import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor() {
-    super();
-    const data = {
-      total: null,
-      next: '0',
-      operation: null,
-    };
-    this.state = data;
-  }
+const Calculator = () => {
+  const [total, setTotal] = useState(0);
+  const [next, setNext] = useState(0);
+  const [operation, setOperation] = useState(null);
 
-  handleClick = (e) => {
-    const value = e.target.getAttribute('data-value');
-    const calc = calculate(this.state, value);
-    this.setState({
-      ...calc,
-    });
+  const handleClick = (value) => {
+    const ob = { total, next, operation };
+    const calc = calculate(ob, value);
+    setTotal(calc.total);
+    setNext(calc.next);
+    setOperation(calc.operation);
   };
 
-  render() {
-    const { next, total } = this.state;
-    return (
-      <div className="container">
-        <Display data={next || total} />
-        <div className="wrapper">
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="AC" value="AC" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="+/-" value="+/-" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="%" value="%" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="÷" value="÷" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="7" value="7" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="8" value="8" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="9" value="9" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="x" value="x" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="4" value="4" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="5" value="5" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="6" value="6" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="-" value="-" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="1" value="1" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="2" value="2" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="3" value="3" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="+" value="+" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray zero" label="0" value="0" />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="gray" label="." value="." />
-          <Button onClick={this.handleClick} onKeyPress={this.onKeyPress} className="orange" label="=" value="=" />
-        </div>
+  const onKeyPress = () => {
+  };
+
+  return (
+    <div className="container">
+      <Display data={next || total} />
+      <div div className="wrapper">
+        <Button Click={handleClick('AC')} KeyPress={onKeyPress} Name="gray" lab="AC" val="AC" />
+        <Button Click={handleClick('+/-')} KeyPress={onKeyPress} Name="gray" lab="+/-" val="+/-" />
+        <Button Click={handleClick('%')} KeyPress={onKeyPress} Name="gray" lab="%" val="%" />
+        <Button Click={handleClick('÷')} KeyPress={onKeyPress} Name="orange" lab="÷" val="÷" />
+        <Button Click={handleClick('7')} KeyPress={onKeyPress} Name="gray" lab="7" val="7" />
+        <Button Click={handleClick('8')} KeyPress={onKeyPress} Name="gray" lab="8" val="8" />
+        <Button Click={handleClick('9')} KeyPress={onKeyPress} Name="gray" lab="9" val="9" />
+        <Button Click={handleClick('X')} KeyPress={onKeyPress} Name="orange" lab="x" val="x" />
+        <Button Click={handleClick('4')} KeyPress={onKeyPress} Name="gray" lab="4" val="4" />
+        <Button Click={handleClick('5')} KeyPress={onKeyPress} Name="gray" lab="5" val="5" />
+        <Button Click={handleClick('6')} KeyPress={onKeyPress} Name="gray" lab="6" val="6" />
+        <Button Click={handleClick('-')} KeyPress={onKeyPress} Name="orange" lab="-" val="-" />
+        <Button Click={handleClick('1')} KeyPress={onKeyPress} Name="gray" lab="1" val="1" />
+        <Button Click={handleClick('2')} KeyPress={onKeyPress} Name="gray" lab="2" val="2" />
+        <Button Click={handleClick('3')} KeyPress={onKeyPress} Name="gray" lab="3" val="3" />
+        <Button Click={handleClick('+')} KeyPress={onKeyPress} Name="orange" lab="+" val="+" />
+        <Button Click={handleClick('0')} KeyPress={onKeyPress} Name="gray zero" lab="0" val="0" />
+        <Button Click={handleClick('.')} KeyPress={onKeyPress} Name="gray" lab="." val="." />
+        <Button Click={handleClick('=')} KeyPress={onKeyPress} Name="orange" lab="=" val="=" />
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Calculator;

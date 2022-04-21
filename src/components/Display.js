@@ -1,19 +1,10 @@
-import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
-
-class Display extends PureComponent {
-  render() {
-    const { data } = this.props;
-    return (
-      <div className="display">
-        {data}
-      </div>
-    );
-  }
-}
-
-Display.propTypes = {
-  data: PropTypes.string.isRequired,
+const Display = (value) => {
+  const { data } = value;
+  return (
+    <div className="display">
+      {data}
+    </div>
+  );
 };
 
 export default Display;
