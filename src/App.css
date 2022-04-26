@@ -64,3 +64,8 @@
   border-right: 1px solid black;
   border-left: 1px solid black;
 }
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
