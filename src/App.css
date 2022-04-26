@@ -8,10 +8,10 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  font-size: 1rem;
 }
 
 .calc-container {
+  font-size: 1rem;
   height: 80vh;
   width: 80vh;
   padding: 1rem;
