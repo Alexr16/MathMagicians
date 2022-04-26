@@ -25,6 +25,7 @@ const Navbar = () => {
           padding: '1rem',
         }}
       >
+        <h1>Math Magicians</h1>
         <ul style={{ display: 'flex', flexDirection: 'row' }}>
           {links.map((link) => (
             <li

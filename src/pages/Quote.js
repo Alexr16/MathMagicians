@@ -2,7 +2,6 @@ import React from 'react';
 
 const Quote = () => (
   <div className="Quote-container">
-    <h1>Math Magicians</h1>
     <p>
       Mathematics is not about numbers, equations, components,
     </p>
