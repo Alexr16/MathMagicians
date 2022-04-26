@@ -1,8 +1,14 @@
 import React from 'react';
 
 const Quote = () => (
-  <div>
-    <h3>No match for this page</h3>
+  <div className="Quote-container">
+    <h1>Math Magicians</h1>
+    <p>
+      Mathematics is not about numbers, equations, components,
+    </p>
+    <p>
+      or algorithms: It is abput understanding. -William Paul Thurston
+    </p>
   </div>
 );
 export default Quote;
