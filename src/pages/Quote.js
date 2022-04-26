@@ -1,7 +1,8 @@
 import React from 'react';
+import './Home.scss';
 
 const Quote = () => (
-  <div className="Quote-container">
+  <div className="quote-container">
     <p>
       Mathematics is not about numbers, equations, components,
     </p>
