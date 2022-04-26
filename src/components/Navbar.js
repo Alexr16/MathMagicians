@@ -1,58 +1,69 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
-const Navbar = () => {
-  const links = [{
-    id: 1,
-    path: '/',
-    text: 'Home',
-  },
-  {
-    id: 2,
-    path: '/calculator',
-    text: 'Calculator',
-  },
-  {
-    id: 3,
-    path: '/quote',
-    text: 'Quote',
-  }];
+const Navbar = () => (
+  <div>
+    <nav
+      style={{
+        padding: '1rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+      }}
+    >
+      <h1>Math Magicians</h1>
+      <ul style={{ display: 'flex', alignItems: 'center' }}>
+        <li
+          className="li-navbar"
+          key={1}
+        >
+          <NavLink
+            style={({ isActive }) => ({
+              display: 'block',
+              textDecoration: 'none',
+              color: isActive ? 'blue' : 'black',
+            })}
+            to="/"
+            exact
+          >
+            Home
+          </NavLink>
+        </li>
+        <li
+          className="li-navbar li-mid"
+          key={2}
+        >
+          <NavLink
+            style={({ isActive }) => ({
+              display: 'block',
+              textDecoration: 'none',
+              color: isActive ? 'blue' : 'black',
+            })}
+            to="/calculator"
+            exact
+          >
+            Calculator
+          </NavLink>
+        </li>
+        <li
+          className="li-navbar"
+          key={3}
+        >
+          <NavLink
+            style={({ isActive }) => ({
+              display: 'block',
+              textDecoration: 'none',
+              color: isActive ? 'blue' : 'black',
+            })}
+            to="/quote"
+            exact
+          >
+            Quote
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+    <Outlet />
+  </div>
+);
 
-  return (
-    <div>
-      <nav
-        style={{
-          padding: '1rem',
-        }}
-      >
-        <h1>Math Magicians</h1>
-        <ul style={{ display: 'flex', flexDirection: 'row' }}>
-          {links.map((link) => (
-            <li
-              key={link.id}
-              style={{
-                padding: '1rem',
-                listStyle: 'none',
-              }}
-            >
-              <NavLink
-                style={({ isActive }) => ({
-                  display: 'block',
-                  textDecoration: 'none',
-                  margin: '1rem 0',
-                  color: isActive ? 'red' : '',
-                })}
-                to={link.path}
-                exact
-              >
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-      <Outlet />
-    </div>
-  );
-};
 export default Navbar;
