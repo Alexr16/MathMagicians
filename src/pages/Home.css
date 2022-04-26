@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.home-container {
+  margin: 0 1rem;
+}
+
+.home-container h2 {
+  padding-bottom: 1rem;
+  margin: 0;
+}
+/*# sourceMappingURL=Home.css.map */
