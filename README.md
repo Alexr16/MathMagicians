@@ -3,11 +3,11 @@
 # Math Magicians
 
 > In this project I build a "Math magicians" App that allows users to Make simple calculations and read a random math-related quote.
-<!-- ## Screenshot
+## Screenshot
 
-<img src="./leaderboard.png">
-<img src="./lmobile.png">-->
-
+<img src="./home.png">
+<img src="./calculator.png">
+<img src="./quote.png">
 ## Built With
 
 - React
