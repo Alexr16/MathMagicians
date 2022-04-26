@@ -20,7 +20,7 @@ const Calculator = () => {
   };
 
   return (
-    <>
+    <div className="cal-cont">
       <div>
         <h2>Let´s do some math!</h2>
       </div>
@@ -48,7 +48,7 @@ const Calculator = () => {
           <div role="button" tabIndex="0" onClick={() => handleClick('=')} onKeyPress={onKeyPress} className="btn orange" value="=">=</div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

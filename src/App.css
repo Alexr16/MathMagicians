@@ -4,9 +4,10 @@
 
 .calc-container {
   font-size: 1rem;
-  height: 80vh;
-  width: 80vh;
-  padding: 1rem;
+}
+
+.container {
+  width: 85vh;
 }
 
 .wrapper {
@@ -19,7 +20,7 @@
   display: grid;
   place-content: center;
   cursor: pointer;
-  height: 70px;
+  height: 50px;
   width: 100%;
   border: 1px solid #afafb2;
 }
@@ -28,7 +29,7 @@
   display: flex;
   color: white;
   background-color: gray;
-  height: 70px;
+  height: 50px;
   padding: 0.5rem;
   font-size: 2rem;
   align-items: center;
@@ -67,5 +68,17 @@
 
 h1 {
   font-size: 2em;
+  margin: 0;
+}
+
+.cal-cont {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
   margin: 0;
 }
