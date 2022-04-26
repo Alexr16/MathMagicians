@@ -1,0 +1,20 @@
+.home-container {
+  margin: 0 1rem;
+
+  h2 {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
+
+.quote-container {
+  margin: 3rem;
+  display: grid;
+  place-content: center;
+  height: 50vh;
+
+  p {
+    margin: 0;
+    font-size: 1.4em;
+  }
+}

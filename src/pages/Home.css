@@ -1,0 +1,22 @@
+.home-container {
+  margin: 0 1rem;
+}
+
+.home-container h2 {
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.quote-container {
+  margin: 3rem;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 50vh;
+}
+
+.quote-container p {
+  margin: 0;
+  font-size: 1.4em;
+}
+/*# sourceMappingURL=Home.css.map */
