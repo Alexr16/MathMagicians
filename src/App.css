@@ -73,7 +73,7 @@ h1 {
 
 .cal-cont {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 1rem;
 }
 
@@ -81,4 +81,5 @@ h2 {
   font-size: 1.5em;
   font-weight: 400;
   margin: 0;
+  padding-right: 10rem;
 }
