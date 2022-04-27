@@ -15,9 +15,11 @@
 - JavaScript
 - HTML
 
-<!-- ## Live Demo
+## Live Demo
 
-For a live demo of the Portfolio [click here](https://Alexr16.github.io/MathMagicians/). -->
+For a live demo
+- Heroku [click here](https://math-magicians-jorge.herokuapp.com/quote).
+- Netlify [click here](https://netlify-thinks-alexr16-is-great.netlify.app).
 
 ## Getting Started
 
